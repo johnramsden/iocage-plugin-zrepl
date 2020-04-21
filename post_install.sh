@@ -9,7 +9,7 @@ service syslogd reload > /dev/null
 # Enable the service
 sysrc -f /etc/rc.conf zrepl_enable="YES" > /dev/null
 
-cat << 'EOF' > /root/PLUGIN_INFO
+echo '
 zrepl is now installed
 
 A ZFS dataset must be delegated into the zrepl jail. Create a dataset on the
@@ -26,4 +26,4 @@ Now the configuration file located at "/usr/local/etc/zrepl/zrepl.yml"
 within the zrepl jail can be edited and zrepl can be used.
 
 For zrepl documentation see https://zrepl.github.io/
-EOF
+' > /root/PLUGIN_INFO
