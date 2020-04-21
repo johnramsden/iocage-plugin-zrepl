@@ -27,3 +27,5 @@ within the zrepl jail can be edited and zrepl can be used.
 
 For zrepl documentation see https://zrepl.github.io/
 ' > /root/PLUGIN_INFO
+
+cat /root/PLUGIN_INFO
